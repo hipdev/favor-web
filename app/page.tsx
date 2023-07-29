@@ -34,7 +34,7 @@ export default async function Login() {
               <input
                 type='text'
                 placeholder='Your city*'
-                className='w-full rounded-full px-6 py-2.5 shadow-sm shadow-black/50 placeholder:text-black/70 sm:py-3'
+                className='w-full rounded-full px-6 py-2.5 shadow-sm shadow-black/50 outline-[#FFA53B] placeholder:text-black/70 sm:py-3'
               />
             </div>
 
