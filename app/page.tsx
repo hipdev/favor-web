@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import AuthPassword from '@/components/auth/auth-password'
+
 import { PiPlayFill } from 'react-icons/pi'
+import { MdPlayCircle } from 'react-icons/md'
 
 export default async function Login() {
   return (
     <div className='min-h-screen bg-[#FFA53B]'>
-      <div className='mx-auto flex max-w-6xl'>
+      <div className='mx-auto flex max-w-6xl pt-14'>
         <div className='relative w-2/3 px-20'>
-          <h3 className='flex items-center gap-2 pt-14 text-4xl font-bold text-black/90'>
+          <h3 className='flex items-center gap-2  text-4xl font-bold text-black/90'>
             <PiPlayFill className='text-3xl text-black' />
             favor
           </h3>
@@ -52,25 +52,25 @@ export default async function Login() {
             />
           </div>
         </div>
-        <div className='flex w-1/3 flex-col justify-center bg-secondary'>
-          <div className='mx-auto flex max-w-md flex-col items-center justify-center'>
+        <div className='flex w-1/3 flex-col items-center'>
+          <h2 className='pt-10 text-center text-2xl font-bold'>
+            Favor in 2 minutes:
+          </h2>
+          <a
+            href='https://www.youtube.com/watch?v=cvfIR-hzVK8&ab_channel=favor'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='group relative h-full w-full'
+          >
             <Image
-              src='/logo.png'
-              width={300}
-              height={100}
+              src='/demo-preview.png'
+              fill
               alt='Login Background'
-              className='relative right-1 w-56'
+              className='object-cover opacity-90 transition-opacity group-hover:opacity-100'
             />
 
-            <AuthPassword />
-
-            <p className='mt-10 text-xs text-white/30'>
-              Forgot your password?{' '}
-              <Link href='/' className='text-primary hover:text-primary/80'>
-                Click here
-              </Link>
-            </p>
-          </div>
+            <MdPlayCircle className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-7xl text-white/80 transition-colors group-hover:text-white' />
+          </a>
         </div>
       </div>
     </div>
