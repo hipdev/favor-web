@@ -1,8 +1,10 @@
 import Image from 'next/image'
+import Autocomplete from 'react-google-autocomplete'
 
 import { MdPlayCircle } from 'react-icons/md'
 import { performRequest } from '@/lib/dato'
 import { HOMEPAGE_QUERY } from '@/lib/queries'
+import HomeForm from '@/components/home/form'
 
 export default async function HomePage() {
   const { homepage } = await performRequest({ query: HOMEPAGE_QUERY })
@@ -21,24 +23,7 @@ export default async function HomePage() {
           <h4 className='mb-5 mt-10 text-xl font-medium sm:mb-7 sm:mt-20'>
             Stay tuned:
           </h4>
-          <form className='max-w-xl'>
-            <div className='space-y-3 sm:space-y-4'>
-              <input
-                type='email'
-                placeholder={homepage.email}
-                className='w-full rounded-full px-6 py-2.5 shadow-sm shadow-black/50 outline-[#FFA53B] placeholder:text-black/70 sm:py-3'
-              />
-              <input
-                type='text'
-                placeholder={homepage.city}
-                className='w-full rounded-full px-6 py-2.5 shadow-sm shadow-black/50 outline-[#FFA53B] placeholder:text-black/70 sm:py-3'
-              />
-            </div>
-
-            <button className='hover mt-5 rounded-full bg-black/70 px-10 py-2.5 font-medium text-white transition-colors hover:bg-black/90 sm:mt-7 sm:py-3'>
-              {homepage.send}
-            </button>
-          </form>
+          <HomeForm content={homepage} />
 
           <h3 className='mt-10 text-center text-xl font-medium text-black/80'>
             {homepage.availableSoon}
