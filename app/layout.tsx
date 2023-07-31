@@ -23,12 +23,15 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={clsx(inter.className, 'bg-[#FFA53B]')}>
-        <main className='min-h-screen'>
-          <header className='mx-auto px-6 pt-10 sm:max-w-6xl sm:px-20'>
-            <h3 className='flex items-center gap-2  text-4xl font-bold text-black/90'>
+        <main className='min-h-screen px-6 sm:px-10'>
+          <header className='mx-auto   pt-10 sm:max-w-6xl'>
+            <Link
+              href='/'
+              className='flex items-center gap-2  text-4xl font-bold text-black/90'
+            >
               <PiPlayFill className='text-2xl text-black sm:text-3xl' />
               favor
-            </h3>
+            </Link>
           </header>
           {children}
           <footer className='flex justify-center gap-8 pb-10 pt-10 font-medium sm:pt-14'>

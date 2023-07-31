@@ -12,3 +12,11 @@ export const HOMEPAGE_QUERY = `
     }
   }
 `
+export const PRIVACY_QUERY = `
+  query PrivacyPage {
+    privacy {
+      title
+      content
+    }
+  }
+`

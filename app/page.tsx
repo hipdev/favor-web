@@ -10,7 +10,7 @@ export default async function HomePage() {
   return (
     <div className=''>
       <div className='mx-auto flex flex-col pt-8 sm:max-w-6xl sm:flex-row sm:pt-14'>
-        <div className='relative w-full px-6 sm:w-2/3 sm:px-20'>
+        <div className='relative w-full sm:w-2/3'>
           <h1 className='pt-12 text-5xl font-semibold sm:pt-16 sm:text-7xl'>
             {homepage.title}
           </h1>
