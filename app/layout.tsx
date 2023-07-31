@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { PiPlayFill } from 'react-icons/pi'
 import Link from 'next/link'
+import RootProviders from '@/components/common/root-providers'
 
 const inter = Inter({
   weight: ['400', '500', '600', '700', '800'],
@@ -33,7 +34,7 @@ export default function RootLayout({
               favor
             </Link>
           </header>
-          {children}
+          <RootProviders>{children}</RootProviders>
           <footer className='flex justify-center gap-8 pb-10 pt-10 font-medium sm:pt-14'>
             <Link href='/terms' className='hover:underline'>
               Terms of service

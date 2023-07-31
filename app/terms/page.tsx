@@ -1,6 +1,6 @@
 import ContentBlock from '@/components/common/content-block'
 import { performRequest } from '@/lib/dato'
-import { TERMS_QUERY } from '@/lib/queries'
+import { TERMS_QUERY } from '@/lib/dato-queries'
 
 export default async function TermsPage() {
   const { termsOfService } = await performRequest({ query: TERMS_QUERY })

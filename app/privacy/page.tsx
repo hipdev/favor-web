@@ -1,6 +1,6 @@
 import ContentBlock from '@/components/common/content-block'
 import { performRequest } from '@/lib/dato'
-import { PRIVACY_QUERY } from '@/lib/queries'
+import { PRIVACY_QUERY } from '@/lib/dato-queries'
 
 export default async function PrivacyPage() {
   const { privacy } = await performRequest({ query: PRIVACY_QUERY })

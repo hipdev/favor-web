@@ -3,7 +3,7 @@ import Autocomplete from 'react-google-autocomplete'
 
 import { MdPlayCircle } from 'react-icons/md'
 import { performRequest } from '@/lib/dato'
-import { HOMEPAGE_QUERY } from '@/lib/queries'
+import { HOMEPAGE_QUERY } from '@/lib/dato-queries'
 import HomeForm from '@/components/home/form'
 
 export default async function HomePage() {
