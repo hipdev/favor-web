@@ -21,7 +21,7 @@ export default async function HomePage() {
           <h4 className='mb-5 mt-10 text-xl font-medium sm:mb-7 sm:mt-20'>
             Stay tuned:
           </h4>
-          <form>
+          <form className='max-w-xl'>
             <div className='space-y-3 sm:space-y-4'>
               <input
                 type='email'

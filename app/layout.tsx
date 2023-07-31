@@ -35,7 +35,7 @@ export default function RootLayout({
           </header>
           {children}
           <footer className='flex justify-center gap-8 pb-10 pt-10 font-medium sm:pt-14'>
-            <Link href='/' className='hover:underline'>
+            <Link href='/terms' className='hover:underline'>
               Terms of service
             </Link>
             <Link href='/privacy' className='hover:underline'>
