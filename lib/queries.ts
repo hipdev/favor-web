@@ -20,3 +20,11 @@ export const PRIVACY_QUERY = `
     }
   }
 `
+export const TERMS_QUERY = `
+  query TermsPage {
+    termsOfService {
+      title
+      content
+    }
+  }
+`
