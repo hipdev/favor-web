@@ -32,7 +32,6 @@ export default function RegisterForm() {
   })
 
   const onSubmit = async (data: Inputs) => {
-    console.log(data, 'data')
     setIsSubmitting(true)
 
     const res = await supabase.auth.signUp({

@@ -28,7 +28,6 @@ export default function HomeForm({ content }: { content: any }) {
 
   const onSubmit = async (data: any) => {
     setIsSubmitting(true)
-    console.log(data, 'data')
 
     await toast.promise(
       addUserEmailAndLocation({ email: data.email, location: data.location }),
@@ -67,6 +66,7 @@ export default function HomeForm({ content }: { content: any }) {
         />
       </div>
 
+      {isSuccess && <p className='mt-4'>{content.successMessage}</p>}
       <button
         disabled={isSubmitting}
         className='hover mt-5 flex items-center gap-2 rounded-full bg-black/70 px-10 py-2.5 font-medium text-white transition-colors hover:bg-black/90 sm:mt-7 sm:py-3'
