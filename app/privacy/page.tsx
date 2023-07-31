@@ -4,7 +4,7 @@ import { MdPlayCircle } from 'react-icons/md'
 import { performRequest } from '@/lib/dato'
 import { HOMEPAGE_QUERY } from '@/lib/queries'
 
-export default async function HomePage() {
+export default async function PrivacyPage() {
   const { homepage } = await performRequest({ query: HOMEPAGE_QUERY })
 
   return (

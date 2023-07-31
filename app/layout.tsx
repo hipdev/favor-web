@@ -1,6 +1,9 @@
+import clsx from 'clsx'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { PiPlayFill } from 'react-icons/pi'
+import Link from 'next/link'
 
 const inter = Inter({
   weight: ['400', '500', '600', '700', '800'],
@@ -19,8 +22,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body className={clsx(inter.className, 'bg-[#FFA53B]')}>
+        <main className='min-h-screen'>
+          <header className='mx-auto px-6 pt-10 sm:max-w-6xl sm:px-20'>
+            <h3 className='flex items-center gap-2  text-4xl font-bold text-black/90'>
+              <PiPlayFill className='text-2xl text-black sm:text-3xl' />
+              favor
+            </h3>
+          </header>
+          {children}
+          <footer className='flex justify-center gap-8 pb-10 pt-10 font-medium sm:pt-14'>
+            <Link href='/' className='hover:underline'>
+              Terms of service
+            </Link>
+            <Link href='/privacy' className='hover:underline'>
+              Privacy Policy
+            </Link>
+          </footer>
+        </main>
       </body>
     </html>
   )
