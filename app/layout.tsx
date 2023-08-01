@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={clsx(inter.className, 'bg-[#FFA53B]')}>
+      <body className={clsx(inter.className, '')}>
         <RootProviders>{children}</RootProviders>
       </body>
     </html>

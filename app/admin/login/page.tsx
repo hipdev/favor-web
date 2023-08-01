@@ -16,7 +16,7 @@ export default async function HomePage() {
   }
 
   return (
-    <div className='flex min-h-screen items-center justify-center'>
+    <div className='flex min-h-screen items-center justify-center bg-primary/70'>
       <div className='w-80 rounded-sm bg-white px-4 py-5 pb-10 shadow-sm shadow-black/40'>
         <h2 className='mb-2 text-center text-2xl font-bold text-black/80'>
           Enter <span className='font-extrabold'>Favor</span>
