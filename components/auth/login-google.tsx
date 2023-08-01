@@ -8,7 +8,7 @@ export default function LoginGoogle() {
   const loginGoogle = async () => {
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${location.origin}/admin/users` },
+      options: { redirectTo: `https://www.getfavor.app/` },
     })
   }
 
