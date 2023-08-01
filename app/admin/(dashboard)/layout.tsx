@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import type { Metadata } from 'next'
 import { cookies } from 'next/headers'
 import { PiPlayFill } from 'react-icons/pi'
