@@ -6,10 +6,9 @@ export default function LoginGoogle() {
   const supabase = createClientComponentClient()
 
   const loginGoogle = async () => {
-    console.log(`${window.location.origin}/admin/users`)
     await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: { redirectTo: `${window.location.origin}/admin/users` },
+      options: { redirectTo: '/admin/users' },
     })
   }
 
