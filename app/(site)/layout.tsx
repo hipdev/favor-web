@@ -14,7 +14,7 @@ export default function SiteLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className='min-h-screen bg-[#FFA53B] px-6 sm:px-10'>
+    <main className='min-h-screen bg-gradient-to-br from-primary to-orange-600 px-6 sm:px-10'>
       <header className='mx-auto   pt-10 sm:max-w-6xl'>
         <Link
           href='/'
